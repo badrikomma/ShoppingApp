@@ -1,0 +1,49 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color='dark'>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>ShopKart.COM</ion-title>
+      <ion-button routerLink="/signup" slot="end" color='dark'>
+        <ion-icon name="log-in-outline" ></ion-icon>
+      </ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="dark">
+  <ion-searchbar animated type="tel"></ion-searchbar>
+  <h3 class="head">Welcome to Mens Zone</h3>
+  <ion-grid>
+    <ion-row>
+      <ion-col *ngFor="let Product of men" size="5" class="cards">
+        <ion-card>
+          <ion-img [src]="Product.imageUrl"></ion-img>
+          <ion-card-title class="cardTitle">{{ Product.title}}</ion-card-title>
+          <ion-card-subtitle>{{ Product.des}}</ion-card-subtitle>
+          <ion-card-content>
+            <p>{{Product.cost}} Rs</p>
+            <ion-button [routerLink]="['../shop-mens/',Product.id]" >BUY NOW</ion-button>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-footer>
+    <ion-grid class="foot">
+      <ion-row>
+        <ion-col>
+          <p>HELP</p>
+          <P>PAYMENT</P>
+          <P>SHIPPING</P>
+          <P>RETURN AND CANCELATION</P>
+        </ion-col>
+        <ion-col>
+          <p>Registered Office Address</p>
+          <p>ShopKart.COM<br>Ameerpet<br>Hyderabad</p>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-footer>
+
+</ion-content>

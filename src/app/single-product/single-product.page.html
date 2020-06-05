@@ -1,0 +1,43 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color='dark'>
+    <ion-button slot="start" color="dark">
+      <ion-back-button></ion-back-button>
+    </ion-button>
+    <ion-title>{{ loadedProduct.title}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-img [src]="loadedProduct.imageUrl"></ion-img>
+    <ion-card-title class="cardTitle">{{ loadedProduct.title }}</ion-card-title>
+    <ion-card-subtitle class="cardSub">{{ loadedProduct.des }}</ion-card-subtitle>
+    <ion-card-content>
+      <h3 class="content">{{ loadedProduct.cost}} Rupees</h3>
+    </ion-card-content>
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <ion-button class="bt" routerLink="/payments">Buy Now</ion-button>
+          <ion-button >Add to Cart</ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-card>
+  <ion-footer>
+    <ion-grid class="foot">
+      <ion-row>
+        <ion-col>
+          <p>HELP</p>
+          <P>PAYMENT</P>
+          <P>SHIPPING</P>
+          <P>RETURN AND CANCELATION</P>
+        </ion-col>
+        <ion-col>
+          <p>Registered Office Address</p>
+          <p>ShopKart.COM<br>Ameerpet<br>Hyderabad</p>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-footer>
+</ion-content>

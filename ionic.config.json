@@ -1,5 +1,7 @@
 {
   "name": "shoppingApp",
-  "integrations": {},
+  "integrations": {
+    "capacitor": {}
+  },
   "type": "angular"
 }

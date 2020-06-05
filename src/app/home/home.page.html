@@ -1,0 +1,156 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color='dark'>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>ShopKart.COM</ion-title>
+      <ion-button routerLink="/signup" slot="end" color='dark'>
+        <ion-icon name="log-in-outline" ></ion-icon>
+      </ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content >
+  <ion-searchbar animated type="tel"></ion-searchbar>
+  <ion-slides autoplay=true loop="true" speed="300" pager="true">
+    <ion-slide><ion-img src="/assets/images/amaze1.jpg"></ion-img></ion-slide>
+    <ion-slide><ion-img src="/assets/images/amaze2.jpg"></ion-img></ion-slide>
+    <ion-slide><ion-img src="/assets/images/amaze3.jpg"></ion-img></ion-slide>
+    <ion-slide><ion-img src="/assets/images/amaze4.jpg"></ion-img></ion-slide>
+  </ion-slides>
+
+  <ion-card>
+    <ion-img src="/assets/images/sale.jpg"></ion-img>
+  </ion-card>
+
+  <ion-card color="dark">
+    <ion-card-header>
+      <ion-card-title>SHOP ACCESSORIES</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <ion-card>
+              <ion-img src="/assets/images/apple2.jpg"></ion-img>
+              <ion-card-header>Apple Watch 2</ion-card-header>
+              <ion-card-content>
+                <p>This is a stylish apple watch</p>
+                <ion-button>Buy Now</ion-button>
+              </ion-card-content>
+            </ion-card>
+          </ion-col>
+          <ion-col>
+            <ion-card>
+            <ion-img src="/assets/images/laptop-1.jpg"></ion-img>
+            <ion-card-header>Lenovo</ion-card-header>
+              <ion-card-content>
+                <p>Ultra Speed Lenovo Lappy</p>
+                <ion-button>Buy Now</ion-button>
+              </ion-card-content>
+            </ion-card>
+          </ion-col>
+          <ion-col>
+            <ion-card>
+            <ion-img src="/assets/images/tvproduct.jpg"></ion-img>
+            <ion-card-header>Sony Bravia</ion-card-header>
+              <ion-card-content>
+                <p>Classy Posh Tv</p>
+                <ion-button>Buy Now</ion-button>
+              </ion-card-content>
+            </ion-card>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card color="dark">
+    <ion-card-header>
+    <ion-card-title>SHOP MEN</ion-card-title>
+  </ion-card-header>
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <ion-card>
+          <ion-img src="/assets/mens/mens2.jpg"></ion-img>
+          <ion-card-header>Levis Shirt</ion-card-header>
+          <ion-card-content><p>Stylish mens pink shirt</p>
+          <ion-button center>Buy Now</ion-button></ion-card-content>
+        </ion-card>
+        </ion-col>
+        <ion-col>
+          <ion-card>
+          <ion-img src="assets/mens/mens3.jpg"></ion-img>
+          <ion-card-header>USPA</ion-card-header>
+          <ion-card-content><p>Stylish mens checks shirt</p>
+          <ion-button>Buy Now</ion-button>
+          </ion-card-content>
+        </ion-card>
+        </ion-col>
+        <ion-col>
+          <ion-card>
+          <ion-img src="assets/mens/mens1.jpg"></ion-img>
+          <ion-card-header>BlackBerry</ion-card-header>
+          <ion-card-content><p>Stylish mens combo shirts</p>
+          <ion-button>Buy Now</ion-button></ion-card-content>
+        </ion-card>
+      </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-card>
+
+  <ion-card color="dark">
+    <ion-card-header>
+    <ion-card-title>SHOP WOMEN</ion-card-title>
+  </ion-card-header>
+        <ion-grid>
+      <ion-row>
+        <ion-col>
+          <ion-card>
+            <ion-img src="/assets/women/1.jpg"></ion-img>
+            <ion-card-header>Puma</ion-card-header>
+            <ion-card-content><p>Lovely maroon dress</p>
+          <ion-button>Buy Now</ion-button></ion-card-content>
+          </ion-card>
+        </ion-col>
+        <ion-col>
+          <ion-card>
+            <ion-img src="/assets/women/3.jpg"></ion-img>
+            <ion-card-header>Nike</ion-card-header>
+            <ion-card-content><p>stylist pink dress</p>
+            <ion-button>Buy Now</ion-button></ion-card-content>
+          </ion-card>
+        </ion-col>
+        <ion-col>
+          <ion-card>
+            <ion-img src="/assets/women/2.jpg"></ion-img>
+            <ion-card-header>Reebok</ion-card-header>
+            <ion-card-content><p>combo pack</p>
+            <ion-button>Buy Now</ion-button></ion-card-content>
+          </ion-card>
+        </ion-col>
+
+      </ion-row>
+    </ion-grid>
+  </ion-card>
+  
+  <ion-footer>
+    <ion-grid class="foot">
+      <ion-row>
+        <ion-col>
+          <p>HELP</p>
+          <P>PAYMENT</P>
+          <P>SHIPPING</P>
+          <P>RETURN AND CANCELATION</P>
+        </ion-col>
+        <ion-col>
+          <p>Registered Office Address</p>
+          <p>ShopKart.COM<br>Ameerpet<br>Hyderabad</p>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-footer>
+  
+</ion-content>
